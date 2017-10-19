@@ -100,7 +100,7 @@ LIB_FILES += -lc -lnosys -lm
 .PHONY: default help
 
 # Default target - first one defined
-default: nrf52832_xxaa
+default: main.c
 
 # Print all targets that can be built
 help:
