@@ -1,12 +1,15 @@
 PROJECT_NAME     := blinky_pca10040
 TARGETS          := nrf52832_xxaa
-OUTPUT_DIRECTORY := _build 
+OUTPUT_DIRECTORY := _build
 
 SDK_ROOT := ../nordic_bootstrap/SDK
 SOURCE_DIR := ./source
 INCLUDES_DIR := ./include
 
 $(OUTPUT_DIRECTORY)/nrf52832_xxaa.out: \
+  LINKER_SCRIPT  := blinky_gcc_nrf52.ld
+
+$(OUTPUT_DIRECTORY)/main.c.out: \
   LINKER_SCRIPT  := blinky_gcc_nrf52.ld
 
 # Source files common to all targets
