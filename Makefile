@@ -1,8 +1,8 @@
 PROJECT_NAME     := blinky_pca10040
 TARGETS          := nrf52832_xxaa
-OUTPUT_DIRECTORY := _build
+OUTPUT_DIRECTORY := _build 
 
-SDK_ROOT := ./SDK
+SDK_ROOT := ../nordic_bootstrap/SDK
 SOURCE_DIR := ./source
 INCLUDES_DIR := ./include
 
